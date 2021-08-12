@@ -1,4 +1,4 @@
-var mode = 0;
+const mode = 0;
 mode = mode + 1;
 function mode_swap() {
   if (mode == 0) {
