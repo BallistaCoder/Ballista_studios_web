@@ -1,10 +1,12 @@
-alert(document.body.style.backgroundColor)
+let mode = 0
+
 function mode_swap() {
-  alert("test")
-  if (document.bgColor == "#0f0f0f"){
+  if (mode == 0){
     document.body.style.backgroundColor = "white";
+    mode = 1;
   }
-  else if (document.bgColor == "white") {
+  else if (mode == 1) {
     document.body.style.backgroundColor = "#0f0f0f";
+    mode = 0
   }
 }
