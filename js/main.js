@@ -1,4 +1,4 @@
-let mode = 0
+let mode = 1
 
 function mode_swap() {
   if (mode == 0){
