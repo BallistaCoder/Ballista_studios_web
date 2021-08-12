@@ -38,13 +38,39 @@ body {
     width: 100%;
 }
 
-
 #nav-left {
     float: left;
 }
+
+#nav-right {
+    float: right;
+}
+
 #title-halved {
     color: #c200a5;
 }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+#nav-bar #refresh {
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: transform 1.5s ease-in-out;
+}
+
+#nav-bar #refresh:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+
 
 
 
