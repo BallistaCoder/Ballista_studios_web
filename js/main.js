@@ -1,3 +1,4 @@
+alert(document.bgColor)
 function mode_swap() {
   if (document.bgColor == "#0f0f0f"){
     document.body.style.backgroundColor = "white";
