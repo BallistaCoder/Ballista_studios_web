@@ -10,15 +10,36 @@ body {
 
 #nav-bar {
     overflow: auto;
+    padding: 0px 10px;
+    background-color: black;
+}
+
+#nav-bar a{
+    display: inline-block;
+    text-decoration: none;
     text-align: center;
     padding: 14px 16px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-transform: bold;
     font-size: 25px;
-    color: white;
     background-color: black;
+    color: white;
 }
+
+#nav-bar a::after {
+    content: "";
+    background-color: white;
+    display: block;
+    transition: all ease-in 2s;
+    border-bottom: 3px solid white;
+    width: 0;
+}
+
+#nav-bar a::after:hover {
+    width: 100%;
+}
+
 
 #nav-left {
     float: left;
@@ -26,3 +47,4 @@ body {
 #title-halved {
     color: #c200a5;
 }
+
