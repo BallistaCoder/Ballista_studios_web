@@ -1,3 +1,4 @@
+window.sessionStorage();
 try {
   var mode = sessionStorage.getItem("bg");
   mode_swap();
