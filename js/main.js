@@ -8,6 +8,7 @@ else {
 }
 
 function mode_swap() {
+  mode = localStorage.getItem("bg");
   if (mode == "light"){
     document.body.style.backgroundColor = "white";
     mode = "dark";
