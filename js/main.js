@@ -1,4 +1,5 @@
 var mode = localStorage.getItem("bg");
+alert("test");
 if (mode == null) {
   var mode = "dark";
   localStorage.setItem("bg", mode);
