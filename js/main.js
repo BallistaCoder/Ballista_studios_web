@@ -1,4 +1,5 @@
 try {
+  alert("test")
   let mode = localstorage.key("bg");
   mode_swap();
   }
