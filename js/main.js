@@ -1,23 +1,25 @@
 try {
-  var mode = parseInt(sessionStorage.getItem("bg"));
+  var mode = sessionStorage.getItem("bg");
+  if (mode=="") {
+     var mode = "light";
+     sessionStorage.setItem("bg", mode);
+  }
   mode_swap();
-  alert("test");
   }
 catch {
-  alert("test2");
-  var mode = 1;
+  var mode = "light";
   sessionStorage.setItem("bg", mode);
 }
 
 function mode_swap() {
-  if (mode == 0){
+  if (mode == "light"){
     document.body.style.backgroundColor = "white";
-    mode = 1;
+    mode = "dark";
     sessionStorage.setItem("bg", mode);
   }
-  else if (mode == 1) {
+  else if (mode == "dark") {
     document.body.style.backgroundColor = "#0f0f0f";
-    mode = 0
+    mode = "like";
     sessionStorage.setItem("bg", mode);
   }
 }
