@@ -4,7 +4,7 @@ if (mode == null) {
   localStorage.setItem("bg", mode);
 }
 else {
-  mode_swap()
+  mode_swap();
 }
 
 function mode_swap() {
@@ -12,11 +12,11 @@ function mode_swap() {
   if (mode == "light"){
     document.body.style.backgroundColor = "white";
     mode = "dark";
-    sessionStorage.setItem("bg", mode);
+    localStorage.setItem("bg", mode);
   }
   else if (mode == "dark") {
     document.body.style.backgroundColor = "#0f0f0f";
     mode = "light";
-    sessionStorage.setItem("bg", mode);
+    localStorage.setItem("bg", mode);
   }
 }
