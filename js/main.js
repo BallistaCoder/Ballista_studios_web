@@ -2,6 +2,7 @@ var mode = localStorage.getItem("bg");
 if (mode == null) {
   var mode = "dark";
   localStorage.setItem("bg", mode);
+  mode_swap();
 }
 else {
   mode_swap();
