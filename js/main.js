@@ -5,14 +5,12 @@ if (mode == null) {
   localStorage.setItem("bg", mode);
   mode_swap();
   alert("test1");
-}
-else {
+} else {
   mode_swap();
   alert("test2");
 }
 
 function mode_swap() {
-  mode = localStorage.getItem("bg");
   if (mode == "light"){
     document.body.style.backgroundColor = "white";
     mode = "dark";
