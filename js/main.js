@@ -1,6 +1,7 @@
 try {
   var mode = parseInt(sessionStorage.getItem("bg"));
   mode_swap();
+  alert("test");
   }
 catch {
   alert("test");
