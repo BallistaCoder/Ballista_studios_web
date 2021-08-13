@@ -1,14 +1,11 @@
 try {
-  var mode = sessionStorage.getItem("bg");
-  if (mode=="") {
-     var mode = "light";
-     sessionStorage.setItem("bg", mode);
-  }
-  mode_swap();
-  }
+  var mode = localStorage.getItem("bg");
+  alert(mode);
+}
 catch {
   var mode = "light";
-  sessionStorage.setItem("bg", mode);
+  localStorage.setItem("bg", mode);
+  alert(mode);
 }
 
 function mode_swap() {
