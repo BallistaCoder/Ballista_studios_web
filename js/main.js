@@ -1,11 +1,10 @@
-try {
-  var mode = localStorage.getItem("bg");
-  alert(mode);
-}
-catch {
-  var mode = "light";
+var mode = localStorage.getItem("bg");
+if (mode == null) {
+  var mode = "dark";
   localStorage.setItem("bg", mode);
-  alert(mode);
+}
+else {
+  mode_swap()
 }
 
 function mode_swap() {
@@ -16,7 +15,7 @@ function mode_swap() {
   }
   else if (mode == "dark") {
     document.body.style.backgroundColor = "#0f0f0f";
-    mode = "like";
+    mode = "light";
     sessionStorage.setItem("bg", mode);
   }
 }
