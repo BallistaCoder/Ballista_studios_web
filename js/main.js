@@ -4,7 +4,7 @@ try {
   alert("test");
   }
 catch {
-  alert("test");
+  alert("test2");
   var mode = 1;
   sessionStorage.setItem("bg", mode);
 }
