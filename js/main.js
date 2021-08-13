@@ -3,6 +3,7 @@ try {
   mode_swap();
   }
 catch {
+  alert("test");
   var mode = 1;
   sessionStorage.setItem("bg", mode);
 }
