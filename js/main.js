@@ -1,4 +1,11 @@
-let mode = 1
+try {
+  let mode = localstorage.key("bg");
+  mode_swap();
+  }
+catch {
+  let mode = 1;
+  window.localStorage.setItem("bg", mode);
+}
 
 function mode_swap() {
   if (mode == 0){
