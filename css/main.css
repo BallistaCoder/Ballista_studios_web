@@ -6,14 +6,15 @@
 
 body {
     min-height: 100%;
-    transition: background-color 2s ease-in;
 }
 .theme-light {
     background-color: white;
+    transition: background-color 2s ease-in;
 }
 
 .theme-dark {
     background-color: #0f0f0f;
+    transition: background-color 2s ease-in;
 }
 
 #nav-bar {
